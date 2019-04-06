@@ -1,18 +1,6 @@
 
-
-
-import java.io.ObjectStreamField;
-import java.io.UnsupportedEncodingException;
-import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Formatter;
-import java.util.Locale;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.regex.PatternSyntaxException;
 import java.lang.String ;
+import java.util.Arrays;
 
 public final class StringClone {
 	
@@ -63,8 +51,9 @@ public final class StringClone {
 	 public static void main(String[] args) {
 		 char[] charArray ={ 'a', 'b', 'c', 'd', 'e' };
 		 StringClone clone = new StringClone(charArray);
-		 clone.replace('a', 'b');
+		 StringClone c =  clone.replace('a', 'b');
 		 System.out.println(clone);
+		 System.out.println(c == clone);
 	 }
 	 
 	
